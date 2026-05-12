@@ -2,6 +2,8 @@
 
 一个 Tampermonkey 用户脚本，用于在指定页面中配置快捷键任务。当前支持 XPath 点击、分组快捷粘贴、执行自定义 JavaScript，并提供可视化配置面板。
 
+发布地址：[GreasyFork - 多快捷键点击](https://greasyfork.org/zh-CN/scripts/577687)
+
 ## 功能
 
 - 点击任务：为一个任务配置一个快捷键，可按顺序点击多个 XPath。
@@ -13,11 +15,26 @@
 
 ## 安装
 
+推荐通过 GreasyFork 安装：
+
+1. 安装浏览器扩展 Tampermonkey。
+2. 打开脚本发布页：[https://greasyfork.org/zh-CN/scripts/577687](https://greasyfork.org/zh-CN/scripts/577687)。
+3. 点击页面上的安装按钮，根据 Tampermonkey 提示完成安装。
+4. 打开匹配页面后，右侧会出现 `TM` 配置按钮。
+
+本地开发或手动安装：
+
 1. 安装浏览器扩展 Tampermonkey。
 2. 新建用户脚本。
 3. 将 `index.js` 的内容复制到脚本编辑器中并保存。
 4. 打开匹配页面后，右侧会出现 `TM` 配置按钮。
 
+默认匹配页面：
+
+```js
+// @match        https://aidp.juejin.cn/*
+// @match        file:///*
+```
 
 如需在其他页面使用，请在 `index.js` 顶部添加对应的 `@match` 规则。
 
@@ -67,3 +84,6 @@ toast('执行完成');
 - 如果当前焦点不可粘贴，文本仍会被复制到剪贴板。
 - XPath 点击任务依赖页面结构，页面更新后可能需要重新调整 XPath。
 
+## 许可证
+
+本项目基于 [MIT License](LICENSE) 开源。
