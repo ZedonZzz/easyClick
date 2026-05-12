@@ -4,7 +4,6 @@
 // @version      4.1
 // @description  支持多个 XPath 点击任务、分组快捷粘贴、多个执行 JS 任务，可视化配置快捷键
 // @author       助手
-// @match        https://aidp.juejin.cn/*
 // @match        file:///*
 // @grant        GM_getValue
 // @grant        GM_setValue

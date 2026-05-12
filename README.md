@@ -18,12 +18,6 @@
 3. 将 `index.js` 的内容复制到脚本编辑器中并保存。
 4. 打开匹配页面后，右侧会出现 `TM` 配置按钮。
 
-默认匹配页面：
-
-```js
-// @match        https://aidp.juejin.cn/*
-// @match        file:///*
-```
 
 如需在其他页面使用，请在 `index.js` 顶部添加对应的 `@match` 规则。
 
